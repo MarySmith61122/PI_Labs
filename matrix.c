@@ -1,5 +1,12 @@
+//Functions for 'matrix' library
+
 #include "matrix.h"
 #include <stdio.h>
+
+//readfile - open .txt file and read input values (4x4 array)
+//if file empty returns 1
+//if reads incorrectly returns 2
+//if reads successfully returns 0
 
 int readfile(char* file, fmatrix inp)
 {
@@ -16,6 +23,8 @@ int readfile(char* file, fmatrix inp)
     fclose(F);
     return 0;
 }
+
+//add - count the sum of elements in the given fragment
 
 float add(fmatrix inp, int part)
 {
@@ -38,6 +47,8 @@ float add(fmatrix inp, int part)
     return s;
 }
 
+//min - find the minimum of elements in the given fragment
+
 float min(fmatrix inp, int part)
 {
     int i, j;
@@ -59,6 +70,8 @@ float min(fmatrix inp, int part)
     }
     return min;
 }
+
+//max - find the maximum of elements in the given fragment
 
 float max(fmatrix inp, int part)
 {

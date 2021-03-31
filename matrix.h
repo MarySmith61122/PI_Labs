@@ -1,3 +1,5 @@
+//Head file for 'matrix' library
+
 #pragma once
 #ifndef  h_matrix
 #define h_matrix
