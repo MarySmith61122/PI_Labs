@@ -2,3 +2,4 @@ Hello
 This file was made for testing purposes
 
 UPD 01.04.21: Add descriptions for library functions
+UPD 15.04.21: Add functions prototypes in Source; Add new function "message" in matrix

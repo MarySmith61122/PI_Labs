@@ -4,15 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-void printhelp()
-{
-    printf("Справка\n -c <имя файла>\n -f <номер фрагмента>\n -n <операция (-'add';-'min';-'max')>\n");
-}
-
-void printerror()
-{
-    printf("Ошибка\n -h - вызов справки\n");
-}
+void printhelp();
+void printerror();
 
 int main(int argc, char* argv[])
 {
@@ -78,4 +71,14 @@ int main(int argc, char* argv[])
         printf("Максимум равен %f\n", max(&a, num));
         return 0;
     }
+}
+
+void printhelp()
+{
+    printf("Справка\n -c <имя файла>\n -f <номер фрагмента>\n -n <операция (-'add';-'min';-'max')>\n");
+}
+
+void printerror()
+{
+    printf("Ошибка\n -h - вызов справки\n");
 }
