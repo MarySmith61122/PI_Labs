@@ -1,0 +1,1 @@
+UPD 15.04.21: Add "input" and "trick" functions in find.c
