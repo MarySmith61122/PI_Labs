@@ -4,3 +4,4 @@ This file was made for testing purposes
 UPD 01.04.21: Add descriptions for library functions
 UPD 15.04.21: Add functions prototypes in Source; Add new function "message" in matrix
 UPD 15.04.21: Merge master and test branches
+UPD 21.04.21: Delete function "message"

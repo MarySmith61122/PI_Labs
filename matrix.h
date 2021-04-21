@@ -9,5 +9,4 @@ extern int readfile(char*, fmatrix);
 extern float add(fmatrix, int);
 extern float min(fmatrix, int);
 extern float max(fmatrix, int);
-extern void message();
 #endif

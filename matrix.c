@@ -94,11 +94,3 @@ float max(fmatrix inp, int part)
     }
     return max;
 }
-
-void message()
-{
-    puts("New message\n");
-    return 0;
-}
-
-
