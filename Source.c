@@ -9,7 +9,7 @@ void printerror();
 
 int main(int argc, char* argv[])
 {
-    mtrx four;
+    mtrx arr;
     char name[100] = "";
     int num = 5;
     char op[4] = "";
@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
         printerror();
         return 1;
     }
-    if (readfile(name, &four) != 0)
+    if (readfile(name, &arr) != 0)
     {
         printf("Ошибка чтения\n");
         return 1;
@@ -56,19 +56,19 @@ int main(int argc, char* argv[])
 
     if (strcmp(op, "add") == 0)
     {
-        printf("Сумма равна %f\n", add(&four, num));
+        printf("Сумма равна %f\n", add(&arr, num));
         return 0;
     }
 
     if (strcmp(op, "min") == 0)
     {
-        printf("Минимум равен %f\n", min(&four, num));
+        printf("Минимум равен %f\n", min(&arr, num));
         return 0;
     }
 
     if (strcmp(op, "max") == 0)
     {
-        printf("Максимум равен %f\n", max(&four, num));
+        printf("Максимум равен %f\n", max(&arr, num));
         return 0;
     }
 }
