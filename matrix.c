@@ -1,15 +1,28 @@
-//Functions for 'matrix' library
+/*!
+    \file
+    \brief Functions for 'matrix' library
+*/
 
 #include "matrix.h"
 #include <stdio.h>
 
-//readfile - open .txt file and read input values (4x4 array)
-//if file empty returns 1
-//if reads incorrectly returns 2
-//if reads successfully returns 0
+/**
+    \brief function readfile
+    \author Mary Smith
+    \version 1.0
+    \date November 2020
+    \warning Function made for educating purposes only
+
+    Function for opening .txt files and reading input values (4x4 array)
+*/
 
 int readfile(char* file, fmatrix inp)
 {
+    /**
+        \param [in] file Input file name
+        \param [in] inp Matrix variable
+    */
+    
     FILE* F = fopen(file, "r");
     if (F == NULL) return 1;
     float n;
@@ -24,10 +37,24 @@ int readfile(char* file, fmatrix inp)
     return 0;
 }
 
-//add - count the sum of elements in the given fragment
+/**
+    \brief function add
+    \author Mary Smith
+    \version 1.0
+    \date November 2020
+    \warning Function made for educating purposes only
+
+    Function for counting the sum of elements in the given fragment
+*/
 
 float add(fmatrix inp, int part)
 {
+    /**
+        \param [in] inp Matrix variable
+        \param [in] part Matrix part
+        \param [out] s The sum of given part
+    */
+    
     int i, j;
     int a1 = 0, a2 = 3;
     float s = 0;
@@ -47,10 +74,24 @@ float add(fmatrix inp, int part)
     return s;
 }
 
-//min - find the minimum of elements in the given fragment
+/**
+    \brief function min
+    \author Mary Smith
+    \version 1.0
+    \date November 2020
+    \warning Function made for educating purposes only
+
+    Function for finding the minimum of elements in the given fragment
+*/
 
 float min(fmatrix inp, int part)
 {
+    /**
+        \param [in] inp Matrix variable
+        \param [in] part Matrix part
+        \param [out] min The minimum element of given part
+    */
+    
     int i, j;
     int a1 = 0, a2 = 3;
     float min = 0;
@@ -71,10 +112,24 @@ float min(fmatrix inp, int part)
     return min;
 }
 
-//max - find the maximum of elements in the given fragment
+/**
+    \brief function max
+    \author Mary Smith
+    \version 1.0
+    \date November 2020
+    \warning Function made for educating purposes only
+
+    Function for finding the maximum of elements in the given fragment
+*/
 
 float max(fmatrix inp, int part)
 {
+    /**
+        \param [in] inp Matrix variable
+        \param [in] part Matrix part
+        \param [out] max The maximum element of given part
+    */
+
     int i, j;
     int a1 = 0, a2 = 3;
     float max = 0;
