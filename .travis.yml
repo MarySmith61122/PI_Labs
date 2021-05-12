@@ -8,4 +8,4 @@ jobs:
       compiler: gcc
 
 script:
-    -wc -l test_travis.txt
+    wc -l test_travis.txt
