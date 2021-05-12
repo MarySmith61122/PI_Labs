@@ -1,0 +1,11 @@
+language: cpp
+
+os: linux
+
+jobs:
+  include:
+    - os: linux
+      compiler: gcc
+
+script:
+    -wc -w test_travis.txt
