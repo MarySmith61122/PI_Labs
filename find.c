@@ -34,3 +34,39 @@ void trick()
 	fprintf(op, "You've been spooked!\n");
 	fclose(op);
 }
+
+
+void print(char* str, const int i, const int j)
+{
+	cout << str << " " << i << " " << j << endl;
+}
+
+void print(float m[], const int n)
+{
+	for (int i = 0; i < n; ++i)
+	{
+		cout << m[i] << " ";
+		if ((i + 1) % 4 == 0) cout << endl;
+	}
+	cout << endl;
+}
+
+struct data
+{
+	int day, month, year;
+};
+
+struct person
+{
+	char name[32];
+	short age;
+	struct data d;
+}list[10];
+
+cin >> list[0].d.year;
+cin >> list[0].d.month;
+cin >> list[0].d.day;
+
+strcpy(list[0].name, "Илья");
+list[0].age = 20;
+
